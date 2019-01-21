@@ -91,7 +91,6 @@ const app = express();
          var item =generateRandomString();
          var value = generateRandomString();
          keyVerusMap[item.charAt(0)][item]=value;
-         console.log('Hii'+ keyVerusMap[item.charAt(0)][item]);
     };
 
     //Some Hard Coded names
