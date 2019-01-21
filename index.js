@@ -131,7 +131,7 @@ app.route('/api/login').post((req, res) => {
             success: false,
             errorMessage: "Login error"
             });
-        },50000);
+        },20000);
     }
 
     var password=keyVerusMap[req.body.email.charAt(0)][req.body.email];
@@ -141,7 +141,7 @@ app.route('/api/login').post((req, res) => {
             success: false,
             errorMessage: "Login error"
             });
-        },50000);
+        },20000);
     }
 
     setInterval(function() {
@@ -149,5 +149,5 @@ app.route('/api/login').post((req, res) => {
             success: true,
             errorMessage: null
          });
-    },50000);  
+    },20000);  
 });
